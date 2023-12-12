@@ -9,15 +9,15 @@ const user = {
    
 }
 const navigation = [
-  { name: 'Dashboard', href: '#', current: true },
-  { name: 'Products', href: '#', current: false },
-  { name: 'Projects', href: '#', current: false },
-  { name: 'About Us', href: '#', current: false },
-  { name: 'Blog', href: '#', current: false },
+  { name: 'Dashboard', href: '/', current: true },
+  { name: 'Products', href: '/products', current: false },
+  { name: 'Projects', href: '/projects', current: false },
+  { name: 'About Us', href: '/amount', current: false },
+  { name: 'Blog', href: '/blog', current: false },
 ]
 const userNavigation = [
-  { name: 'Your Profile', href: '#' },
-  { name: 'Settings', href: '#' },
+  { name: 'Your Profile', href: '/profile' },
+  { name: 'Settings', href: '/settings' },
   { name: 'Sign out', href: '#' },
 ]
 
