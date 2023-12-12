@@ -3,8 +3,8 @@ import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const user = {
-  name: 'Tom Cook',
-  email: 'tom@example.com',
+  name: 'Tony',
+  email: 'tony@example.com',
 
    
 }
@@ -72,6 +72,12 @@ export default function nav() {
                   </div>
                   <div className="hidden md:block">
                     <div className="ml-4 flex items-center md:ml-6">
+                    {/* Search bar */}
+                      <input
+                       type="text"
+                        placeholder="Search"
+                         className="px-2 py-1 rounded-md mr-5 bg-gray-100 text-black focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-900"
+                       />                  
                       <button
                         type="button"
                         className="relative rounded-full bg-gray-300 p-1 text-black hover:text-black focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
@@ -120,8 +126,15 @@ export default function nav() {
                       </Menu>
                     </div>
                   </div>
-                  <div className="-mr-2 flex md:hidden">
                     {/* Mobile menu button */}
+                  <div className="-mr-2 flex md:hidden">
+                        {/* Search bar */}
+                         <input
+                         type="text"
+                         placeholder="Search"
+                         className="px-2 py-1 rounded-md bg-gray-300 mr-2 text-black focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-900"
+                       />
+                      {/* Hamburger menu */}
                     <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md bg-gray-200 p-2 text-black hover:bg-gray-400 hover:text-black focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                       <span className="absolute -inset-0.5" />
                       <span className="sr-only">Open main menu</span>
@@ -187,12 +200,6 @@ export default function nav() {
             </>
           )}
         </Disclosure>
-
-        <header className="bg-white shadow">
-          <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-            <h1 className="text-3xl font-bold tracking-tight text-black">Dashboard</h1>
-          </div>
-        </header>
 
       </div>
     </>
