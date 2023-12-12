@@ -6,6 +6,7 @@ import Banner from './components/Banner.jsx'
 import Home from './components/Home.jsx'
 import Products from './components/Products'
 import Blog from './components/Blog.jsx'
+import Footer  from './components/Footer.jsx'
 
 
 
@@ -25,8 +26,10 @@ export default function App() {
         <Route path="/Blog" element={<Blog/>} />
         <Route path="/contact" element={<Contact/>} />
       </Routes>
+    <Footer/>
     </>
     </Router>
 
   );
+  
 }
