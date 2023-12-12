@@ -12,7 +12,8 @@ const navigation = [
   { name: 'Dashboard', href: '/', current: true },
   { name: 'Products', href: '/products', current: false },
   { name: 'Projects', href: '/projects', current: false },
-  { name: 'About Us', href: '/amount', current: false },
+  { name: 'About Us', href: '/abount', current: false },
+  { name: 'Contact Us', href: '/contact', current: false },
   { name: 'Blog', href: '/blog', current: false },
 ]
 const userNavigation = [
@@ -28,14 +29,6 @@ function classNames(...classes) {
 export default function nav() {
   return (
     <>
-      {/*
-        This example requires updating your template:
-
-        ```
-        <html class="h-full bg-gray-100">
-        <body class="h-full">
-        ```
-      */}
       <div className="h-full bg-gray-100">
         <Disclosure as="nav" className="bg-gray-200">
           {({ open }) => (
@@ -51,7 +44,7 @@ export default function nav() {
                       />
                     </div>
                     <div className="hidden md:block">
-                      <div className="ml-10 flex items-baseline space-x-4">
+                      <div className="ml-4 flex items-baseline space-x-2">
                         {navigation.map((item) => (
                           <a
                             key={item.name}
@@ -200,7 +193,9 @@ export default function nav() {
             </>
           )}
         </Disclosure>
-
+      <div>
+        
+      </div>
       </div>
     </>
   )

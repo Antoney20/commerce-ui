@@ -17,7 +17,42 @@ const products = [
         price: '$35',
         color: 'Black',
       },  
-
+        {
+        id: 3,
+        name: 'Basic Tee',
+        href: '#',
+        imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
+        imageAlt: "Front of men's Basic Tee in black.",
+        price: '$35',
+        color: 'Black',
+      },
+      {
+        id: 4,
+        name: 'Basic Tee',
+        href: '#',
+        imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
+        imageAlt: "Front of men's Basic Tee in black.",
+        price: '$35',
+        color: 'Black',
+      },
+      {
+        id: 5,
+        name: 'Basic Tee',
+        href: '#',
+        imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
+        imageAlt: "Front of men's Basic Tee in black.",
+        price: '$35',
+        color: 'Black',
+      },
+      {
+        id: 6,
+        name: 'Basic Tee',
+        href: '#',
+        imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
+        imageAlt: "Front of men's Basic Tee in black.",
+        price: '$35',
+        color: 'Black',
+      },
       
   ]
   
@@ -27,9 +62,9 @@ const products = [
       <div className="bg-white">
       {/*Products container*/}
         <div className="mx-auto max-w-2xl px-4 py-16 sm:px-4 sm:py-24 lg:max-w-7xl lg:px-8">
-          <h2 className="text-2xl font-bold tracking-tight text-gray-900">Customers also purchased</h2>
+          <h2 className="text-2xl font-bold tracking-tight text-gray-900">Products catalogue</h2>
           {/* For larger devices */}
-          <div className="mt-6 grid grid-cols-2 gap-x-2 gap-y-10 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 xl:gap-x-4">
+          <div className="mt-6 grid grid-cols-2 gap-x-2 gap-y-10 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 xl:gap-x-4">
             {products.map((product) => (
               <div key={product.id} className="group relative">
                 <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-60">

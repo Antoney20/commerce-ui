@@ -1,12 +1,22 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 import Home  from "./components/Home.jsx";
-import Hero from './components/Hero.jsx'
+
+
+
+import Contact from './components/Contact.jsx'
 
 
 export default function App() {
   return (
-    <h1 className="text-3xl font-bold">
-    <Home/>
-    <Hero />
-    </h1>
-  )
+    <Router>
+    <div className='app'>
+    <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="/contact" element={<Contact/>} />
+      </Routes>
+    </div>
+    </Router>
+
+  );
 }
