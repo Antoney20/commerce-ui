@@ -1,6 +1,6 @@
 const products = [
     {
-      id: 1,
+      id: 7,
       name: 'Basic Tee',
       href: '#',
       imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
@@ -53,6 +53,61 @@ const products = [
         price: '$35',
         color: 'Black',
       },
+      { 
+      id: 7,
+      name: 'Basic Tee',
+      href: '#',
+      imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
+      imageAlt: "Front of men's Basic Tee in black.",
+      price: '$35',
+      color: 'Black',
+    },
+    {
+        id: 8,
+        name: 'Basic Tee',
+        href: '#',
+        imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
+        imageAlt: "Front of men's Basic Tee in black.",
+        price: '$35',
+        color: 'Black',
+      },  
+        {
+        id: 9,
+        name: 'Basic Tee',
+        href: '#',
+        imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
+        imageAlt: "Front of men's Basic Tee in black.",
+        price: '$35',
+        color: 'Black',
+      },
+      {
+        id: 10,
+        name: 'Basic Tee',
+        href: '#',
+        imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
+        imageAlt: "Front of men's Basic Tee in black.",
+        price: '$35',
+        color: 'Black',
+      },
+      {
+        id: 11,
+        name: 'Basic Tee',
+        href: '#',
+        imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
+        imageAlt: "Front of men's Basic Tee in black.",
+        price: '$35',
+        color: 'Black',
+      },
+      {
+        id: 12,
+        name: 'Basic Tee',
+        href: '#',
+        imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
+        imageAlt: "Front of men's Basic Tee in black.",
+        price: '$35',
+        color: 'Black',
+      },
+      
       
   ]
   
@@ -67,7 +122,7 @@ const products = [
           <div className="mt-6 grid grid-cols-2 gap-x-2 gap-y-10 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 xl:gap-x-4">
             {products.map((product) => (
               <div key={product.id} className="group relative">
-                <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-60">
+                <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-60 border shadow-md">
                   <img
                     src={product.imageSrc}
                     alt={product.imageAlt}
