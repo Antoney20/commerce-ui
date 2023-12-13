@@ -6,7 +6,7 @@ export default function Home() {
   return (
 
     <div  className="main">
-        <div className="relative isolate items-center gap-x-6 overflow-hidden bg-gray-50 px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
+        <div className="relative isolate items-center gap-x-6 overflow-hidden bg-gradient-to-r from-indigo-100 via-slate-50 to-gray-100 px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
       <div
         className="absolute left-[max(-7rem,calc(50%-52rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl"
         aria-hidden="true"
