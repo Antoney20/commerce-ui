@@ -121,7 +121,7 @@ const products = [
       {/*Products container*/}
         <div className="mx-auto max-w-2xl px-4 py-16 sm:px-4 sm:py-24 lg:max-w-7xl lg:px-8">
           <h2 className="text-2xl font-bold tracking-tight text-gray-900">Products catalogue</h2>
-          {/* For larger devices */}
+          {/* For larger, medium, and smaller devices */}
           <div className="mt-6 grid grid-cols-2 gap-x-2 gap-y-10 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 xl:gap-x-4">
             {products.map((product) => (
               <div key={product.id} className="group relative">
